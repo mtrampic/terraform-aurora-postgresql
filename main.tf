@@ -34,7 +34,7 @@ module "aurora" {
   engine          = "aurora-postgresql"
   engine_version  = "14.7"
   master_username = "root"
-  storage_type    = ""
+  storage_type    = "aurora-iopt1"
   instances = {
     1 = {
       instance_class          = "db.r5.2xlarge"
